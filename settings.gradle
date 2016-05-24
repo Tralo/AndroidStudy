@@ -1,1 +1,1 @@
-include ':app', ':valieanim', ':mvp_demo', ':scan_for_friend'
+include ':app', ':valieanim', ':mvp_demo', ':scan_for_friend', ':aidl_demo'
