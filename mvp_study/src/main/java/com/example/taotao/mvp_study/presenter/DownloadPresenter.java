@@ -3,6 +3,8 @@ package com.example.taotao.mvp_study.presenter;
 import android.os.Handler;
 import android.os.Message;
 
+import com.example.taotao.mvp_study.model.IDownloadModel;
+import com.example.taotao.mvp_study.model.impl.DownloadModelImpl;
 import com.example.taotao.mvp_study.view.IDownloadView;
 
 
@@ -11,52 +13,35 @@ import com.example.taotao.mvp_study.view.IDownloadView;
  */
 public class DownloadPresenter {
 
+
     private IDownloadView iDownloadView;
-    private boolean isStart = false;
-    private boolean isFinish = false;
+    private IDownloadModel downloadModel;
 
 
 
     public DownloadPresenter(IDownloadView iDownloadView){
         this.iDownloadView = iDownloadView;
+        downloadModel = new DownloadModelImpl();
     }
 
-    private Handler mHandler = new Handler() {
-        @Override
-        public void handleMessage(Message msg) {
-            if(isStart){
+    public void startDownload(){
+        downloadModel.startDownload(new DownloadModelImpl.DownloadListener() {
+            @Override
+            public void startDownload() {
                 iDownloadView.startDownload();
-                isStart = false;
-            } else if(isFinish){
-                iDownloadView.finishDownload();
-            } else {
-                int process = msg.arg1;
+            }
+
+            @Override
+            public void downloading(int process) {
                 iDownloadView.downloading(process);
             }
-        }
-    };
 
-    public void startDownload(){
-
-        new Thread(new Runnable() {
             @Override
-            public void run() {
-                int process = 5;
-                while(process <= 100){
-                    Message msg = mHandler.obtainMessage();
-                    msg.arg1 = process;
-                    mHandler.sendMessage(msg);
-                    process += 1;
-                    try {
-                        Thread.sleep(1000);
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
-                }
-                isFinish = true;
-
+            public void finishDownload() {
+                iDownloadView.finishDownload();
             }
-        }).start();
+        });
+
 
     }
 
