@@ -1,1 +1,1 @@
-include ':app', ':valieanim', ':mvp_demo', ':scan_for_friend', ':aidl_demo', ':mvp_study', ':viewpagerfragtab', ':recyclerview_demo'
+include ':app', ':valieanim', ':mvp_demo', ':scan_for_friend', ':aidl_demo', ':mvp_study', ':viewpagerfragtab', ':greendaodemo', ':demobeangenerator', ':beangenerator'

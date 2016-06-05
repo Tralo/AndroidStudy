@@ -10,9 +10,11 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/aidl_demo" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/beangenerator" />
+            <option value="$PROJECT_DIR$/demobeangenerator" />
+            <option value="$PROJECT_DIR$/greendaodemo" />
             <option value="$PROJECT_DIR$/mvp_demo" />
             <option value="$PROJECT_DIR$/mvp_study" />
-            <option value="$PROJECT_DIR$/recyclerview_demo" />
             <option value="$PROJECT_DIR$/scan_for_friend" />
             <option value="$PROJECT_DIR$/valieanim" />
             <option value="$PROJECT_DIR$/viewpagerfragtab" />

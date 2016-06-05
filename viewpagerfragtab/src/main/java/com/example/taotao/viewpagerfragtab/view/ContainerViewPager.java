@@ -16,11 +16,11 @@ public class ContainerViewPager extends LazyViewpager {
 
     @Override
     public boolean onInterceptTouchEvent(MotionEvent arg0) {
-        return false;
+        return true;
     }
 
     @Override
     public boolean onTouchEvent(MotionEvent arg0) {
-        return false;
+        return true;
     }
 }

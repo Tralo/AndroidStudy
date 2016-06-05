@@ -12,12 +12,8 @@ import com.example.taotao.mvp_study.view.IDownloadView;
  * Created by taotao on 16-5-27.
  */
 public class DownloadPresenter {
-
-
     private IDownloadView iDownloadView;
     private IDownloadModel downloadModel;
-
-
 
     public DownloadPresenter(IDownloadView iDownloadView){
         this.iDownloadView = iDownloadView;
