@@ -13,8 +13,12 @@
       <module fileurl="file://$PROJECT_DIR$/mvp_demo/mvp_demo.iml" filepath="$PROJECT_DIR$/mvp_demo/mvp_demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/mvp_study/mvp_study.iml" filepath="$PROJECT_DIR$/mvp_study/mvp_study.iml" />
       <module fileurl="file://$PROJECT_DIR$/okhttp/okhttp.iml" filepath="$PROJECT_DIR$/okhttp/okhttp.iml" />
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/rn1/rn1.iml" filepath="$PROJECT_DIR$/rn1/rn1.iml" />
       <module fileurl="file://$PROJECT_DIR$/rxjavademo/rxjavademo.iml" filepath="$PROJECT_DIR$/rxjavademo/rxjavademo.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/ottodemo/ottodemo.iml" filepath="$PROJECT_DIR$/ottodemo/ottodemo.iml" />
+>>>>>>> ef96410ae9670422daa0b70d3b14a1c45dd91b36
       <module fileurl="file://$PROJECT_DIR$/scan_for_friend/scan_for_friend.iml" filepath="$PROJECT_DIR$/scan_for_friend/scan_for_friend.iml" />
       <module fileurl="file://$PROJECT_DIR$/valieanim/valieanim.iml" filepath="$PROJECT_DIR$/valieanim/valieanim.iml" />
       <module fileurl="file://$PROJECT_DIR$/viewpagerfragtab/viewpagerfragtab.iml" filepath="$PROJECT_DIR$/viewpagerfragtab/viewpagerfragtab.iml" />

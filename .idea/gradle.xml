@@ -18,14 +18,19 @@
             <option value="$PROJECT_DIR$/mvp_demo" />
             <option value="$PROJECT_DIR$/mvp_study" />
             <option value="$PROJECT_DIR$/okhttp" />
+<<<<<<< HEAD
             <option value="$PROJECT_DIR$/rn1" />
             <option value="$PROJECT_DIR$/rxjavademo" />
+=======
+            <option value="$PROJECT_DIR$/ottodemo" />
+>>>>>>> ef96410ae9670422daa0b70d3b14a1c45dd91b36
             <option value="$PROJECT_DIR$/scan_for_friend" />
             <option value="$PROJECT_DIR$/valieanim" />
             <option value="$PROJECT_DIR$/viewpagerfragtab" />
             <option value="$PROJECT_DIR$/win8_metro" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
     </option>
   </component>
