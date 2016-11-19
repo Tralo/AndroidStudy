@@ -47,7 +47,7 @@ public abstract class SimpleBaseAdapter<T> extends BaseAdapter{
     }
     @Override
     public long getItemId(int i) {
-        
+
         return i;
     }
 
