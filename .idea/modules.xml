@@ -6,14 +6,19 @@
       <module fileurl="file://$PROJECT_DIR$/aidl_demo/aidl_demo.iml" filepath="$PROJECT_DIR$/aidl_demo/aidl_demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/beangenerator/beangenerator.iml" filepath="$PROJECT_DIR$/beangenerator/beangenerator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/danmakudemo/danmakudemo.iml" filepath="$PROJECT_DIR$/danmakudemo/danmakudemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/demobeangenerator/demobeangenerator.iml" filepath="$PROJECT_DIR$/demobeangenerator/demobeangenerator.iml" />
       <module fileurl="file://$PROJECT_DIR$/greendaodemo/greendaodemo.iml" filepath="$PROJECT_DIR$/greendaodemo/greendaodemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mdexample/mdexample.iml" filepath="$PROJECT_DIR$/mdexample/mdexample.iml" />
       <module fileurl="file://$PROJECT_DIR$/mvp_demo/mvp_demo.iml" filepath="$PROJECT_DIR$/mvp_demo/mvp_demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/mvp_study/mvp_study.iml" filepath="$PROJECT_DIR$/mvp_study/mvp_study.iml" />
       <module fileurl="file://$PROJECT_DIR$/okhttp/okhttp.iml" filepath="$PROJECT_DIR$/okhttp/okhttp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rn1/rn1.iml" filepath="$PROJECT_DIR$/rn1/rn1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rxjavademo/rxjavademo.iml" filepath="$PROJECT_DIR$/rxjavademo/rxjavademo.iml" />
       <module fileurl="file://$PROJECT_DIR$/scan_for_friend/scan_for_friend.iml" filepath="$PROJECT_DIR$/scan_for_friend/scan_for_friend.iml" />
       <module fileurl="file://$PROJECT_DIR$/valieanim/valieanim.iml" filepath="$PROJECT_DIR$/valieanim/valieanim.iml" />
       <module fileurl="file://$PROJECT_DIR$/viewpagerfragtab/viewpagerfragtab.iml" filepath="$PROJECT_DIR$/viewpagerfragtab/viewpagerfragtab.iml" />
+      <module fileurl="file://$PROJECT_DIR$/win8_metro/win8_metro.iml" filepath="$PROJECT_DIR$/win8_metro/win8_metro.iml" />
     </modules>
   </component>
 </project>

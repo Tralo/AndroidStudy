@@ -11,14 +11,19 @@
             <option value="$PROJECT_DIR$/aidl_demo" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/beangenerator" />
+            <option value="$PROJECT_DIR$/danmakudemo" />
             <option value="$PROJECT_DIR$/demobeangenerator" />
             <option value="$PROJECT_DIR$/greendaodemo" />
+            <option value="$PROJECT_DIR$/mdexample" />
             <option value="$PROJECT_DIR$/mvp_demo" />
             <option value="$PROJECT_DIR$/mvp_study" />
             <option value="$PROJECT_DIR$/okhttp" />
+            <option value="$PROJECT_DIR$/rn1" />
+            <option value="$PROJECT_DIR$/rxjavademo" />
             <option value="$PROJECT_DIR$/scan_for_friend" />
             <option value="$PROJECT_DIR$/valieanim" />
             <option value="$PROJECT_DIR$/viewpagerfragtab" />
+            <option value="$PROJECT_DIR$/win8_metro" />
           </set>
         </option>
       </GradleProjectSettings>
