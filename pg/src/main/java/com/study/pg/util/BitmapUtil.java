@@ -8,11 +8,12 @@ import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.provider.MediaStore;
 
+import com.study.pg.app.MyApplication;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 
-import coder.prettygirls.app.MyApplication;
 
 /**
  * bitmap处理工具类

@@ -7,7 +7,7 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.net.Uri;
 
-import coder.prettygirls.R;
+import com.study.pg.R;
 
 
 /**
