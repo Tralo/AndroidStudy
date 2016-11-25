@@ -71,7 +71,7 @@ public class HomeActivity extends AppActivity{
 
     @Override
     protected BaseFragment getFirstFragment() {
-        return null;
+        return new GirlsFragment();
     }
 
     @Override
@@ -111,12 +111,8 @@ public class HomeActivity extends AppActivity{
                 finish();
                 System.exit(0);
             }
-
-
             return true;
         }
-
-
         return super.onKeyDown(keyCode, event);
     }
 }
