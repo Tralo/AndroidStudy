@@ -11,6 +11,7 @@ import android.widget.ImageView;
 import android.support.v7.widget.Toolbar;
 
 import com.bumptech.glide.Glide;
+import com.study.pg.BuildConfig;
 import com.study.pg.R;
 import com.study.pg.app.MyApplication;
 import com.study.pg.base.BaseFragment;
