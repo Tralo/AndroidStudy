@@ -13,12 +13,12 @@ import com.study.pg.base.BaseFragment;
 public class SplashActivity extends AppActivity {
     @Override
     protected BaseFragment getFirstFragment() {
-        return null;
+        return SplashFragment.getInstance();
     }
 
     @Override
     protected int getContentViewId() {
-        return R.layout.activity_main;
+        return R.layout.activity_splash;
     }
 
     @Override

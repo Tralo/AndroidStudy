@@ -7,6 +7,8 @@ import android.view.animation.Animation;
 import android.view.animation.ScaleAnimation;
 import android.widget.ImageView;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.study.pg.R;
 import com.study.pg.base.ActivityManager;
 import com.study.pg.base.BaseFragment;
@@ -79,11 +81,20 @@ public class SplashFragment extends BaseFragment implements SplashContract.View{
 
     @Override
     public void showGirl(String girlUrl) {
+        Glide.with(getContext())
+                .load(girlUrl)
+                .animate(scaleAnimation)
+                .into(iv_splash);
 
     }
 
     @Override
     public void showGirl() {
+        Glide.with(getActivity())
+                .load(R.mipmap.welcome)
+                .diskCacheStrategy(DiskCacheStrategy.SOURCE)
+                .animate(scaleAnimation)
+                .into(iv_splash);
 
     }
 

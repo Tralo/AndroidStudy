@@ -71,7 +71,7 @@ public class HomeActivity extends AppActivity{
 
     @Override
     protected BaseFragment getFirstFragment() {
-        return new GirlsFragment();
+        return  GirlsFragment.getInstance();
     }
 
     @Override
