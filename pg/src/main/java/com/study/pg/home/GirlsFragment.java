@@ -12,6 +12,7 @@ import com.jude.easyrecyclerview.adapter.RecyclerArrayAdapter;
 import com.study.pg.R;
 import com.study.pg.base.BaseFragment;
 import com.study.pg.data.bean.GirlsBean;
+import com.study.pg.girl.GirlActivity;
 import com.study.pg.util.LogUtil;
 
 import java.util.ArrayList;
@@ -95,10 +96,14 @@ public class GirlsFragment extends BaseFragment implements GirlsContract.View, S
         mAdapter.setOnItemClickListener(new RecyclerArrayAdapter.OnItemClickListener() {
             @Override
             public void onItemClick(int position) {
-//                Intent intent = new Intent(mActivity,GirlActivity.class);
+                Intent intent = new Intent(mActivity,GirlActivity.class);
+                intent.putParcelableArrayListExtra("girls",data);
+                intent.putExtra("current",position);
+                startActivity(intent);
 
             }
         });
+        mGirlsRecyclerView.setRefreshListener(this);
 
     }
 
