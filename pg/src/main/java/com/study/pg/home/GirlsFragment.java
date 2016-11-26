@@ -96,7 +96,7 @@ public class GirlsFragment extends BaseFragment implements GirlsContract.View, S
             @Override
             public void onItemClick(int position) {
 //                Intent intent = new Intent(mActivity,GirlActivity.class);
-                
+
             }
         });
 
