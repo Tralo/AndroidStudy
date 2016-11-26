@@ -1,7 +1,10 @@
 package com.study.pg.girl;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.graphics.Bitmap;
+import android.graphics.drawable.Drawable;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Parcelable;
 import android.support.annotation.Nullable;
@@ -21,6 +24,7 @@ import com.study.pg.home.GirlsFragment;
 import com.study.pg.util.BitmapUtil;
 import com.study.pg.widget.PinchImageView;
 
+import java.io.File;
 import java.util.ArrayList;
 
 import butterknife.BindView;
@@ -55,9 +59,9 @@ public class GirlFragment extends BaseFragment implements ViewPager.OnPageChange
         return rootView;
     }
 
-    public static GirlsFragment newInstance(ArrayList<Parcelable> datas, int current){
+    public static GirlFragment newInstance(ArrayList<Parcelable> datas, int current){
         Bundle bundle = new Bundle();
-        GirlsFragment fragment = new GirlsFragment();
+        GirlFragment fragment = new GirlFragment();
         bundle.putParcelableArrayList("girls",datas);
         bundle.putInt("current",current);
         fragment.setArguments(bundle);
@@ -145,6 +149,26 @@ public class GirlFragment extends BaseFragment implements ViewPager.OnPageChange
     @Override
     protected int getLayoutId() {
         return R.layout.fragment_girl;
+    }
+
+    public void shareGirl() {
+        PinchImageView imageView = getCurrentImageView();
+        Drawable drawable = imageView.getDrawable();
+        if (drawable != null) {
+            Bitmap bitmap = BitmapUtil.drawableToBitmap(drawable);
+            boolean isSuccess = BitmapUtil.saveBitmap(bitmap, Constants.dir, "share.jpg", false);
+            if (isSuccess) {
+                //由文件得到uri
+                Uri imageUri = Uri.fromFile(new File(Constants.dir + "/share.jpg"));
+                Intent shareIntent = new Intent();
+                shareIntent.setAction(Intent.ACTION_SEND);
+                shareIntent.putExtra(Intent.EXTRA_STREAM, imageUri);
+                shareIntent.setType("image/*");
+                startActivity(Intent.createChooser(shareIntent, "分享MeiZhi到"));
+            } else {
+                Snackbar.make(rootView, "大爷，分享出错了哦~", Snackbar.LENGTH_LONG).show();
+            }
+        }
     }
 
     public interface OnGirlChange{

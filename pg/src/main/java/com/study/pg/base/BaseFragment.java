@@ -55,4 +55,6 @@ public abstract class BaseFragment extends Fragment{
         initView(view,savedInstanceState);
         return view;
     }
+
+
 }
