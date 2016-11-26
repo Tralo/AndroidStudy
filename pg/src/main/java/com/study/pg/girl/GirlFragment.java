@@ -1,19 +1,24 @@
 package com.study.pg.girl;
 
 import android.app.Activity;
+import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.os.Parcelable;
 import android.support.annotation.Nullable;
+import android.support.design.widget.Snackbar;
 import android.support.v4.view.ViewPager;
+import android.support.v7.graphics.Palette;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 
 import com.study.pg.R;
+import com.study.pg.app.Constants;
 import com.study.pg.base.BaseFragment;
 import com.study.pg.data.bean.GirlsBean;
 import com.study.pg.home.GirlsFragment;
+import com.study.pg.util.BitmapUtil;
 import com.study.pg.widget.PinchImageView;
 
 import java.util.ArrayList;
@@ -81,7 +86,37 @@ public class GirlFragment extends BaseFragment implements ViewPager.OnPageChange
 
     @Override
     public void onPageSelected(int position) {
+        getColor();
 
+    }
+
+    private void getColor() {
+        PinchImageView imageView = getCurrentImageView();
+        Bitmap bitmap = BitmapUtil.drawableToBitmap(imageView.getDrawable());
+        Palette.Builder builder = Palette.from(bitmap);
+        builder.generate(new Palette.PaletteAsyncListener() {
+            @Override
+            public void onGenerated(Palette palette) {
+                Palette.Swatch vir = palette.getVibrantSwatch();
+                if(vir == null){
+                    return;
+                }
+                mListener.change(vir.getRgb());
+            }
+        });
+    }
+
+    public void saveGirl(){
+        String imgUrl = datas.get(mViewPager.getCurrentItem()).getUrl();
+        PinchImageView imageView = getCurrentImageView();
+        Bitmap bitmap = BitmapUtil.drawableToBitmap(imageView.getDrawable());
+        boolean isSuccess = BitmapUtil.saveBitmap(bitmap,
+                Constants.dir,imgUrl.substring(imgUrl.lastIndexOf("/") + 1, imgUrl.length()),true);
+        if(isSuccess){
+            Snackbar.make(rootView, "大爷，下载好了呢~", Snackbar.LENGTH_LONG).show();
+        } else {
+            Snackbar.make(rootView, "大爷，下载出错了哦~", Snackbar.LENGTH_LONG).show();
+        }
     }
 
     @Override
@@ -102,9 +137,6 @@ public class GirlFragment extends BaseFragment implements ViewPager.OnPageChange
         mViewPager.setAdapter(mAdapter);
         mViewPager.setCurrentItem(current);
         mViewPager.setOnPageChangeListener(this);
-
-
-
     }
 
 
