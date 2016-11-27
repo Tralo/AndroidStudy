@@ -1,2 +1,2 @@
-include ':app', ':valieanim', ':mvp_demo', ':scan_for_friend', ':aidl_demo', ':mvp_study', ':viewpagerfragtab', ':greendaodemo', ':demobeangenerator', ':beangenerator', ':okhttp', ':ottodemo', ':pg', ':dagger2demo', ':zhihurx'
+include ':app', ':valieanim', ':mvp_demo', ':scan_for_friend', ':aidl_demo', ':mvp_study', ':viewpagerfragtab', ':greendaodemo', ':demobeangenerator', ':beangenerator', ':okhttp', ':ottodemo', ':pg', ':dagger2demo', ':zhihurx', ':br'
 
