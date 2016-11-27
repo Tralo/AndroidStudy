@@ -10,6 +10,7 @@
       <module fileurl="file://$PROJECT_DIR$/dagger2demo/dagger2demo.iml" filepath="$PROJECT_DIR$/dagger2demo/dagger2demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/demobeangenerator/demobeangenerator.iml" filepath="$PROJECT_DIR$/demobeangenerator/demobeangenerator.iml" />
       <module fileurl="file://$PROJECT_DIR$/greendaodemo/greendaodemo.iml" filepath="$PROJECT_DIR$/greendaodemo/greendaodemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/menudemo/menudemo.iml" filepath="$PROJECT_DIR$/menudemo/menudemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/mvp_demo/mvp_demo.iml" filepath="$PROJECT_DIR$/mvp_demo/mvp_demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/mvp_study/mvp_study.iml" filepath="$PROJECT_DIR$/mvp_study/mvp_study.iml" />
       <module fileurl="file://$PROJECT_DIR$/okhttp/okhttp.iml" filepath="$PROJECT_DIR$/okhttp/okhttp.iml" />
