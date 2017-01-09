@@ -2,6 +2,7 @@ package com.study.br.module;
 
 import com.study.br.api.support.LoggingInterceptor;
 import com.study.br.base.Constant;
+import com.study.br.utils.LogUtils;
 
 import dagger.Module;
 import dagger.Provides;
